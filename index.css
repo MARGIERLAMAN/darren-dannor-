@@ -5,11 +5,8 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
 
-/* Header Styling */
+
 header {
     position: absolute;
     top: 0;
@@ -21,21 +18,17 @@ header {
     
 }
 
-edit the header of the page,so it can be adjustable 
-
-
 .header-left h1 {
     font-size: 1.2em;
     font-weight: 400;
     color: antiquewhite;
     text-transform: uppercase;
-    top-padding: 50px;
 }
 
 .header-right ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
 .header-right ul li {
@@ -49,36 +42,37 @@ edit the header of the page,so it can be adjustable
     font-size: 1em;
 }
 
+/* Logo button - new CSS */
 .logo-button {
-    text-decoration: none;
-    color: antiquewhite;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    padding: 50px;
+    text-decoration: none; /* Remove underline */
+    color: antiquewhite;    /* Maintain color */
+    font-weight: 400;       /* Font weight */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 1.2em;       /* Font size */
 }
 
 .logo-button:hover {
-    color: #00ff00;
+    color: #00ff00; /* Optional hover effect */
 }
 
 main {
     text-align: center;
-    margin-top: 100px; /* Reduce margin for better fit on mobile */
+    margin-top: 150px;
     padding: 0 20px;
     max-width: 1200px;
 }
 
 main h2 {
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: 900;
     letter-spacing: 2px;
 }
 
-.main .location {
+main .location {
     font-size: 1.2em;
     font-weight: 400;
     margin-top: 10px;
+    letter-spacing: 2px;
     color: #8e8e8e;
 }
 
@@ -102,7 +96,7 @@ main h3 {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 30px; /* Reduce margin for better mobile fit */
+    margin-top: 50px;
 }
 
 .card {
@@ -118,12 +112,14 @@ main h3 {
     margin-bottom: 10px;
 }
 
-/* Make content cards responsive */
-@media (max-width: 768px) {
-    .content-cards {
-        flex-direction: column;
-        align-items: center;
-    }
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.card ul li {
+    margin-bottom: 8px;
 }
 
 .availability {
@@ -136,10 +132,12 @@ main h3 {
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
+    text-align: left;
 }
 
 .learning-progress {
     margin-top: 15px;
+    text-align: left;
 }
 
 .progress-bar {
@@ -156,27 +154,83 @@ main h3 {
     border-radius: 5px;
 }
 
+/* Animation for h2 */
+.animate {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    main h2 {
+        font-size: 2.5em;
+    }
+
+    .header-right ul li a {
+        font-size: 0.9em;
+    }
+
+    .content-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .header-left h1 {
+        font-size: 1em;
+    }
+
+    .header-right ul {
+        gap: 15px;
+    }
+
+    .header-right ul li a {
+        font-size: 0.9em;
+    }
+
+    main h2 {
+        font-size: 3em;
+    }
+}
+
 /* Carousel Styling */
 .carousel {
     position: relative;
-    width: 90%;
+    width: 80%; /* Adjust as necessary */
     margin: auto;
     overflow: hidden;
 }
 
 .carousel-container {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease; /* Smooth transition */
 }
 
 .carousel-slide {
-    min-width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 100%; /* Each slide takes full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow for depth */
 }
 
 .carousel-image {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; /* Ensures the image fits its container */
+    border-radius: 10px; /* Optional: Rounded corners */
 }
 
 .carousel-nav {
@@ -189,7 +243,7 @@ main h3 {
 }
 
 .carousel-nav button {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -199,5 +253,5 @@ main h3 {
 }
 
 .carousel-nav button:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
 }
