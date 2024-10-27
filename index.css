@@ -5,7 +5,17 @@
     box-sizing: border-box;
 }
 
-
+body {
+    background-color: #69359C;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
 header {
     position: absolute;
@@ -14,8 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 60px;
-    
+    padding: 20px 40px;
 }
 
 .header-left h1 {
