@@ -17,7 +17,6 @@ body {
     margin: 0;
 }
 
-/* Header Styling */
 header {
     position: absolute;
     top: 0;
@@ -25,7 +24,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
 }
 
 .header-left h1 {
@@ -35,14 +33,21 @@ header {
     text-transform: uppercase;
 }
 
+.header-right {
+    margin-right: 30px; /* Add margin to push the menu items towards the right */
+}
+
 .header-right ul {
     list-style: none;
     display: flex;
     gap: 30px;
+    padding: 10px 0; /* Add padding to center items vertically */
+    margin: 3; /* Remove extra margins */
 }
 
 .header-right ul li {
     display: inline-block;
+    padding: 5px 0; /* Adjust padding for vertical centering */
 }
 
 .header-right ul li a {
@@ -50,19 +55,25 @@ header {
     color: white;
     font-weight: 400;
     font-size: 1em;
+    padding: 5px 10px; /* Add padding around text */
+    transition: color 0.3s ease; /* Smooth hover transition */
 }
 
-/* Logo button */
+.header-right ul li a:hover {
+    color: #00ff00; /* Change color on hover for a clearer effect */
+}
+
+/* Logo button - new CSS */
 .logo-button {
-    text-decoration: none;
-    color: antiquewhite;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1.2em;
+    text-decoration: none; /* Remove underline */
+    color: antiquewhite;    /* Maintain color */
+    font-weight: 400;       /* Font weight */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 1.2em;       /* Font size */
 }
 
 .logo-button:hover {
-    color: #00ff00;
+    color: #00ff00; /* Optional hover effect */
 }
 
 main {
@@ -78,7 +89,7 @@ main h2 {
     letter-spacing: 2px;
 }
 
-.main .location {
+main .location {
     font-size: 1.2em;
     font-weight: 400;
     margin-top: 10px;
@@ -182,7 +193,7 @@ main h3 {
     }
 }
 
-/* Responsiveness */
+/* Make it responsive */
 @media (max-width: 768px) {
     main h2 {
         font-size: 2.5em;
@@ -223,24 +234,24 @@ main h3 {
 /* Carousel Styling */
 .carousel {
     position: relative;
-    width: 80%;
+    width: 80%; /* Adjust as necessary */
     margin: auto;
     overflow: hidden;
 }
 
 .carousel-container {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease; /* Smooth transition */
 }
 
 .carousel-slide {
-    min-width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 100%; /* Each slide takes full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow for depth */
 }
 
 .carousel-image {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; /* Ensures the image fits its container */
+    border-radius: 10px; /* Optional: Rounded corners */
 }
 
 .carousel-nav {
@@ -253,7 +264,7 @@ main h3 {
 }
 
 .carousel-nav button {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -263,5 +274,5 @@ main h3 {
 }
 
 .carousel-nav button:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
 }
