@@ -34,13 +34,16 @@ body {
     animation: fadeIn 2s ease forwards; /* Fade in over 2 seconds */
 }
 
-/* Add delay for each element */
 .fade-in:nth-of-type(1) {
     animation-delay: 0.5s; /* Delay for first text element */
 }
 
 .fade-in:nth-of-type(2) {
     animation-delay: 1s; /* Delay for second text element */
+}
+
+.fade-in:nth-of-type(3) {
+    animation-delay: 1.5s; /* Delay for contact info to slide in */
 }
 
 header {
@@ -124,6 +127,38 @@ p {
     color: #ccc;
 }
 
+/* Contact Info Styling */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.contact-info ul li {
+    margin: 8px 0;
+}
+
+.contact-info ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #00FF00;
+}
+
+/* Footer Styling */
 footer {
     position: absolute;
     bottom: 0;
@@ -131,4 +166,14 @@ footer {
     text-align: center;
     padding: 10px 0;
     color: #aaa;
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00FF00;
 }
