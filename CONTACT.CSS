@@ -26,11 +26,7 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
-
-
     }
-
-
 }
 
 /* Style for elements that fade in */
@@ -63,13 +59,16 @@ header {
     color: #aaa;
 }
 
-.logo {
+.logo-button {
+    text-decoration: none;
+}
+
+.logo-button h1 {
     font-size: 24px;
     font-weight: bold;
     color: #ffffff; /* Ensures the color is fully white */
     text-transform: uppercase; /* Capitalizes the text */
 }
-
 
 .nav-links {
     display: flex;
@@ -109,13 +108,12 @@ header {
 .status-dot {
     width: 10px;
     height: 10px;
-    background-color: #00FF00;
+    background-color: #00FF00; /* Green dot */
     border-radius: 50%;
     margin-right: 8px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-h2 {
+h1 {
     font-size: 32px;
     font-weight: 400;
     line-height: 1.4;
@@ -160,4 +158,16 @@ p {
 
 .contact-info ul li a:hover {
     color: #00FF00; /* Hover color for links */
+}
+
+/* Additional responsive styling for smaller devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
 }
