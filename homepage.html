@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stagmen Fashion</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="nav-left">
+                    <img src="AFHLOGO.jpeg" alt="Logo" class="logo">
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <h1>ARNTFRMHERE</h1>
+                    <div class="icons">
+                        <a href="#" class="icon"><i class="fas fa-search"></i></a>
+                        <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bestseller">
+            <div class="container">
+                <h2>AFH APPAREL</h2>
+                <div class="products">
+                    <!-- First Product -->
+                    <div class="product" data-title="VOYAGER LIGHT BABY TEE" data-price="$150" data-images='["“VOYAGER LIGHT” BABY TEE. (1).jpg", "“VOYAGER LIGHT” BABY TEE. (2).jpg", "“VOYAGER LIGHT” BABY TEE. (3).jpg"]'>
+                        <div class="carousel">
+                            <img class="carousel-img" src="“VOYAGER LIGHT” BABY TEE. (1).jpg" alt="VOYAGER LIGHT BABY TEE.">
+                            <img class="carousel-img" src="“VOYAGER LIGHT” BABY TEE. (2).jpg" alt="VOYAGER LIGHT BABY TEE.">
+                            <img class="carousel-img" src="“VOYAGER LIGHT” BABY TEE. (3).jpg" alt="VOYAGER LIGHT BABY TEE.">
+                        </div>
+                        <div class="product-info">
+                            <h3>VOYAGER LIGHT BABY TEE</h3>
+                            <p>$150</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Second Product -->
+                    <div class="product" data-title="VOYAGER ST8MENT ZIPUP" data-price="$150" data-images='["VOYAGER ST8MENT  (1).jpg", "VOYAGER ST8MENT  (2).jpg", "VOYAGER ST8MENT  (3).jpg"]'>
+                        <div class="carousel">
+                            <img class="carousel-img" src="VOYAGER ST8MENT  (1).jpg" alt="VOYAGER ST8MENT ZIPUP">
+                            <img class="carousel-img" src="VOYAGER ST8MENT  (2).jpg" alt="VOYAGER ST8MENT ZIPUP">
+                            <img class="carousel-img" src="VOYAGER ST8MENT  (3).jpg" alt="VOYAGER ST8MENT ZIPUP">
+                        </div>
+                        <div class="product-info">
+                            <h3>VOYAGER ST8MENT ZIPUP</h3>
+                            <p>$150</p>
+                        </div>
+                    </div>
+                
+                    <!-- Third Product -->
+                    <div class="product" data-title="BA-JORTS" data-price="$150" data-images='["BA-JORTS (1).jpg", "BA-JORTS (2).jpg", "BA-JORTS (3).jpg"]'>
+                        <div class="carousel">
+                            <img class="carousel-img" src="BA-JORTS (1).jpg" alt="BA-JORTS">
+                            <img class="carousel-img" src="BA-JORTS (2).jpg" alt="BA-JORTS">
+                            <img class="carousel-img" src="BA-JORTS (3).jpg" alt="BA-JORTS">
+                        </div>
+                        <div class="product-info">
+                            <h3>BA-JORTS</h3>
+                            <p>$150</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sliding Product Details Pane -->
+        <div class="product-details-pane" id="detailsPane">
+            <span class="close-btn">&times;</span>
+            <div class="product-container">
+                <div class="image-section" id="detailsImages"></div>
+                <div class="details-section">
+                    <h2 id="detailsTitle"></h2>
+                    <p id="detailsPrice"></p>
+                    <div class="sizes">
+                        <div class="size">S</div>
+                        <div class="size">M</div>
+                        <div class="size">L</div>
+                        <div class="size">XL</div>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <!-- JavaScript file -->
+    <script src="ARTJS.JS"></script>
+</body>
+</html>
